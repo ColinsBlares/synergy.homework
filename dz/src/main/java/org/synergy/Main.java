@@ -30,6 +30,9 @@ public class Main {
         System.out.print("Введите переменную типа boolean: ");
         boolean booleanVar = in.nextBoolean();
 
+        System.out.print("Введите переменную типа Char: ");
+        char charvar = in.next().trim().charAt(0);
+
         System.out.printf("Ваши данные: \n " +
                         "String: %s, " +
                         "byteVar:%d, " +
@@ -39,7 +42,8 @@ public class Main {
                         "Float: %f.2f, " +
                         "Double: %s " +
                         "boolean: %s " +
-                "\n", st, byteVar, shortVar, longVar, intVar, floatvar, doubleVar, booleanVar);
+                        "char: %s" +
+                "\n", st, byteVar, shortVar, longVar, intVar, floatvar, doubleVar, booleanVar, charvar);
         in.close();
     }
 }
